@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E8238AC21C6A9CDF00D751E4 /* PinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8238AC11C6A9CDF00D751E4 /* PinController.swift */; };
+		E8238AC61C6AA87000D751E4 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8238AC51C6AA87000D751E4 /* UIViewControllerExtension.swift */; };
+		E8238ACD1C6AC31600D751E4 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8238ACC1C6AC31600D751E4 /* ApiClient.swift */; };
+		E8238AE81C6D1D7600D751E4 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8238AE71C6D1D7600D751E4 /* Storage.swift */; };
+		E823D3311C6975AB0037B013 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823D3301C6975AB0037B013 /* MainController.swift */; };
+		E823D3361C6A5D510037B013 /* ParseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823D3351C6A5D510037B013 /* ParseClient.swift */; };
+		E823D3391C6A601C0037B013 /* ParseStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823D3381C6A601C0037B013 /* ParseStudent.swift */; };
 		E8FF72C81C6423F000CA6F6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF72C71C6423F000CA6F6A /* AppDelegate.swift */; };
-		E8FF72CA1C6423F000CA6F6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF72C91C6423F000CA6F6A /* ViewController.swift */; };
+		E8FF72CA1C6423F000CA6F6A /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF72C91C6423F000CA6F6A /* LoginController.swift */; };
 		E8FF72CD1C6423F000CA6F6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FF72CB1C6423F000CA6F6A /* Main.storyboard */; };
 		E8FF72CF1C6423F000CA6F6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8FF72CE1C6423F000CA6F6A /* Assets.xcassets */; };
 		E8FF72D21C6423F000CA6F6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8FF72D01C6423F000CA6F6A /* LaunchScreen.storyboard */; };
 		E8FF72DD1C6423F100CA6F6A /* OnTheMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF72DC1C6423F100CA6F6A /* OnTheMapUITests.swift */; };
+		E8FF72F91C652F7600CA6F6A /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF72F81C652F7600CA6F6A /* MapController.swift */; };
+		E8FF72FD1C652F8F00CA6F6A /* ListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF72FC1C652F8F00CA6F6A /* ListController.swift */; };
+		E8FF731F1C65428A00CA6F6A /* UdacityClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF731E1C65428A00CA6F6A /* UdacityClient.swift */; };
+		E8FF732D1C65484D00CA6F6A /* UdacityUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF732C1C65484D00CA6F6A /* UdacityUser.swift */; };
+		E8FF73441C65700D00CA6F6A /* LoadingOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8FF73431C65700D00CA6F6A /* LoadingOverlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +38,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E8238AC11C6A9CDF00D751E4 /* PinController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinController.swift; sourceTree = "<group>"; };
+		E8238AC51C6AA87000D751E4 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		E8238ACC1C6AC31600D751E4 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		E8238AE71C6D1D7600D751E4 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		E823D3301C6975AB0037B013 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		E823D3351C6A5D510037B013 /* ParseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseClient.swift; sourceTree = "<group>"; };
+		E823D3381C6A601C0037B013 /* ParseStudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseStudent.swift; sourceTree = "<group>"; };
 		E8FF72C41C6423F000CA6F6A /* OnTheMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OnTheMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8FF72C71C6423F000CA6F6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E8FF72C91C6423F000CA6F6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8FF72C91C6423F000CA6F6A /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		E8FF72CC1C6423F000CA6F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8FF72CE1C6423F000CA6F6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8FF72D11C6423F000CA6F6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +55,11 @@
 		E8FF72D81C6423F100CA6F6A /* OnTheMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnTheMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8FF72DC1C6423F100CA6F6A /* OnTheMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnTheMapUITests.swift; sourceTree = "<group>"; };
 		E8FF72DE1C6423F100CA6F6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8FF72F81C652F7600CA6F6A /* MapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
+		E8FF72FC1C652F8F00CA6F6A /* ListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListController.swift; sourceTree = "<group>"; };
+		E8FF731E1C65428A00CA6F6A /* UdacityClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityClient.swift; sourceTree = "<group>"; };
+		E8FF732C1C65484D00CA6F6A /* UdacityUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UdacityUser.swift; sourceTree = "<group>"; };
+		E8FF73431C65700D00CA6F6A /* LoadingOverlay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingOverlay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E823D3341C6A5C470037B013 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				E823D3351C6A5D510037B013 /* ParseClient.swift */,
+				E823D3381C6A601C0037B013 /* ParseStudent.swift */,
+			);
+			name = Parse;
+			sourceTree = "<group>";
+		};
 		E8FF72BB1C6423F000CA6F6A = {
 			isa = PBXGroup;
 			children = (
@@ -78,11 +111,13 @@
 			isa = PBXGroup;
 			children = (
 				E8FF72C71C6423F000CA6F6A /* AppDelegate.swift */,
-				E8FF72C91C6423F000CA6F6A /* ViewController.swift */,
 				E8FF72CB1C6423F000CA6F6A /* Main.storyboard */,
 				E8FF72CE1C6423F000CA6F6A /* Assets.xcassets */,
-				E8FF72D01C6423F000CA6F6A /* LaunchScreen.storyboard */,
-				E8FF72D31C6423F000CA6F6A /* Info.plist */,
+				E8FF73181C653A4200CA6F6A /* Clients */,
+				E8FF72F61C652DE200CA6F6A /* Controllers */,
+				E8FF731A1C653A5800CA6F6A /* Models */,
+				E8FF73421C656FF400CA6F6A /* Views */,
+				E8FF731C1C653A7400CA6F6A /* Support */,
 			);
 			path = OnTheMap;
 			sourceTree = "<group>";
@@ -94,6 +129,63 @@
 				E8FF72DE1C6423F100CA6F6A /* Info.plist */,
 			);
 			path = OnTheMapUITests;
+			sourceTree = "<group>";
+		};
+		E8FF72F61C652DE200CA6F6A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E8FF72C91C6423F000CA6F6A /* LoginController.swift */,
+				E8FF72FC1C652F8F00CA6F6A /* ListController.swift */,
+				E8FF72F81C652F7600CA6F6A /* MapController.swift */,
+				E823D3301C6975AB0037B013 /* MainController.swift */,
+				E8238AC11C6A9CDF00D751E4 /* PinController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		E8FF73181C653A4200CA6F6A /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				E823D3341C6A5C470037B013 /* Parse */,
+				E8FF73191C653A4900CA6F6A /* Udacity */,
+				E8238ACC1C6AC31600D751E4 /* ApiClient.swift */,
+			);
+			name = Clients;
+			sourceTree = "<group>";
+		};
+		E8FF73191C653A4900CA6F6A /* Udacity */ = {
+			isa = PBXGroup;
+			children = (
+				E8FF731E1C65428A00CA6F6A /* UdacityClient.swift */,
+				E8FF732C1C65484D00CA6F6A /* UdacityUser.swift */,
+			);
+			name = Udacity;
+			sourceTree = "<group>";
+		};
+		E8FF731A1C653A5800CA6F6A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E8238AE71C6D1D7600D751E4 /* Storage.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		E8FF731C1C653A7400CA6F6A /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E8FF72D01C6423F000CA6F6A /* LaunchScreen.storyboard */,
+				E8FF72D31C6423F000CA6F6A /* Info.plist */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		E8FF73421C656FF400CA6F6A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E8FF73431C65700D00CA6F6A /* LoadingOverlay.swift */,
+				E8238AC51C6AA87000D751E4 /* UIViewControllerExtension.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +291,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E8FF72CA1C6423F000CA6F6A /* ViewController.swift in Sources */,
+				E8FF731F1C65428A00CA6F6A /* UdacityClient.swift in Sources */,
+				E8238AE81C6D1D7600D751E4 /* Storage.swift in Sources */,
+				E8FF72CA1C6423F000CA6F6A /* LoginController.swift in Sources */,
+				E8FF732D1C65484D00CA6F6A /* UdacityUser.swift in Sources */,
+				E8FF72F91C652F7600CA6F6A /* MapController.swift in Sources */,
+				E823D3311C6975AB0037B013 /* MainController.swift in Sources */,
+				E823D3361C6A5D510037B013 /* ParseClient.swift in Sources */,
+				E8238ACD1C6AC31600D751E4 /* ApiClient.swift in Sources */,
+				E8FF73441C65700D00CA6F6A /* LoadingOverlay.swift in Sources */,
 				E8FF72C81C6423F000CA6F6A /* AppDelegate.swift in Sources */,
+				E8238AC61C6AA87000D751E4 /* UIViewControllerExtension.swift in Sources */,
+				E8238AC21C6A9CDF00D751E4 /* PinController.swift in Sources */,
+				E8FF72FD1C652F8F00CA6F6A /* ListController.swift in Sources */,
+				E823D3391C6A601C0037B013 /* ParseStudent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,8 +432,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OnTheMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.egorio.OnTheMap;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egorio.on-the-map";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -339,8 +444,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = OnTheMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.egorio.OnTheMap;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.egorio.on-the-map";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -388,6 +494,7 @@
 				E8FF72E31C6423F100CA6F6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E8FF72E41C6423F100CA6F6A /* Build configuration list for PBXNativeTarget "OnTheMapUITests" */ = {
 			isa = XCConfigurationList;
@@ -396,6 +503,7 @@
 				E8FF72E61C6423F100CA6F6A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

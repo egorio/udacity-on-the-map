@@ -11,6 +11,7 @@
 		E8238AC61C6AA87000D751E4 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8238AC51C6AA87000D751E4 /* UIViewControllerExtension.swift */; };
 		E8238ACD1C6AC31600D751E4 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8238ACC1C6AC31600D751E4 /* ApiClient.swift */; };
 		E8238AE81C6D1D7600D751E4 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8238AE71C6D1D7600D751E4 /* Storage.swift */; };
+		E8238AED1C6D431100D751E4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = E8238AEC1C6D431100D751E4 /* .gitignore */; };
 		E823D3311C6975AB0037B013 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823D3301C6975AB0037B013 /* MainController.swift */; };
 		E823D3361C6A5D510037B013 /* ParseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823D3351C6A5D510037B013 /* ParseClient.swift */; };
 		E823D3391C6A601C0037B013 /* ParseStudent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823D3381C6A601C0037B013 /* ParseStudent.swift */; };
@@ -42,6 +43,7 @@
 		E8238AC51C6AA87000D751E4 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		E8238ACC1C6AC31600D751E4 /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		E8238AE71C6D1D7600D751E4 /* Storage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		E8238AEC1C6D431100D751E4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		E823D3301C6975AB0037B013 /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		E823D3351C6A5D510037B013 /* ParseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseClient.swift; sourceTree = "<group>"; };
 		E823D3381C6A601C0037B013 /* ParseStudent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseStudent.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				E8FF72C61C6423F000CA6F6A /* OnTheMap */,
 				E8FF72DB1C6423F100CA6F6A /* OnTheMapUITests */,
 				E8FF72C51C6423F000CA6F6A /* Products */,
+				E8238AEC1C6D431100D751E4 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -271,6 +274,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8238AED1C6D431100D751E4 /* .gitignore in Resources */,
 				E8FF72D21C6423F000CA6F6A /* LaunchScreen.storyboard in Resources */,
 				E8FF72CF1C6423F000CA6F6A /* Assets.xcassets in Resources */,
 				E8FF72CD1C6423F000CA6F6A /* Main.storyboard in Resources */,

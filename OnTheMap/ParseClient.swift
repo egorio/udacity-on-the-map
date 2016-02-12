@@ -47,13 +47,13 @@ class ParseClient: ApiClient {
                 return
             }
 
-            var students: [ParseStudent] = []
-
+            Storage.shared.students = []
+            
             for result in results {
-                students.append(ParseStudent(dictionary: result))
+                Storage.shared.students.append(ParseStudent(dictionary: result))
             }
 
-            handler(students: students, error: nil)
+            handler(students: Storage.shared.students, error: nil)
         }
     }
 
@@ -77,7 +77,8 @@ class ParseClient: ApiClient {
             }
 
             if let dictionary = results.first {
-                handler(student: ParseStudent(dictionary: dictionary), error: nil)
+                Storage.shared.student = ParseStudent(dictionary: dictionary)
+                handler(student: Storage.shared.student, error: nil)
             }
             else {
                 handler(student: nil, error: nil)

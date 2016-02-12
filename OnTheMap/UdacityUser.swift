@@ -9,7 +9,7 @@
 /*
  * Parse User model
  */
-class UdacityUser {
+struct UdacityUser {
 
     var id: String = ""
     var firstName: String = ""

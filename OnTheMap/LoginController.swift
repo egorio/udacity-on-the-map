@@ -8,15 +8,38 @@
 
 import UIKit
 
-class LoginController: UIViewController {
+class LoginController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        usernameField.delegate = self
+        passwordField.delegate = self
+    }
+
+    /*
+     * Hide keyboard on press return + do action of current field (username = go to password, password - try to login)
+     */
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        usernameField.resignFirstResponder()
+        passwordField.resignFirstResponder()
+
+        if (textField === usernameField) {
+            passwordField.becomeFirstResponder()
+        } else if (textField === passwordField) {
+            login()
+        }
+
+        return true
+    }
+
     /*
      * Login to application using email and password
      */
-    @IBAction func login(sender: UIButton) {
+    @IBAction func login(sender: UIButton? = nil) {
         // Username and password can't be empty
         guard usernameField.text!.isEmpty == false && passwordField.text!.isEmpty == false else {
             showErrorAlert("Email or password is empty")
@@ -29,12 +52,12 @@ class LoginController: UIViewController {
         UdacityClient.shared.createSession(usernameField.text!, password: passwordField.text!) { (error: String?) in
             dispatch_async(dispatch_get_main_queue(), {
                 LoadingOverlay.shared.hideOverlayView()
-                
+
                 guard error == nil else {
                     self.showErrorAlert(error!)
                     return
                 }
-                
+
                 self.presentViewControllerWithIdentifier("NavigationController")
             })
         }

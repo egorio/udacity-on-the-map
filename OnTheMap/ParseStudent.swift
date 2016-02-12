@@ -11,7 +11,7 @@ import Foundation
 /*
  * Parse Student model
  */
-class ParseStudent {
+struct ParseStudent {
 
     var firstName: String
     var lastName: String

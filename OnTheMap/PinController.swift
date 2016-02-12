@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class PinController: UIViewController, MKMapViewDelegate {
+class PinController: UIViewController, MKMapViewDelegate, UITextFieldDelegate {
 
     var location: String = ""
     var coordinate: CLLocationCoordinate2D?
@@ -22,10 +22,31 @@ class PinController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var searchButton: UIButton!
     @IBOutlet weak var submitButton: UIButton!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        answerField.delegate = self
+    }
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-
+        
         showStepOne()
+    }
+
+    /*
+     * Hide keyboard on press return + do action of current button (search or submit)
+     */
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        answerField.resignFirstResponder()
+
+        if searchButton.hidden == false {
+            search(searchButton)
+        } else {
+            submit(submitButton)
+        }
+
+        return true
     }
 
     /*
@@ -94,7 +115,7 @@ class PinController: UIViewController, MKMapViewDelegate {
             }
 
             // Student data doesn't matter creating or updating
-            let student = ParseStudent(dictionary: [
+            var student = ParseStudent(dictionary: [
                 "firstName": user!.firstName,
                 "lastName": user!.lastName,
                 "longitude": Double(self.coordinate!.longitude),
@@ -127,6 +148,7 @@ class PinController: UIViewController, MKMapViewDelegate {
         questionLabel.text = "Where are you\nstudying today?"
         answerField.text = ""
         answerField.placeholder = "Enter your location here"
+        answerField.returnKeyType = .Search
         searchButton.hidden = false
         submitButton.hidden = true
         mapViewHeight.constant = 0
@@ -139,6 +161,7 @@ class PinController: UIViewController, MKMapViewDelegate {
         questionLabel.text = "What is the link\nyou want to share?"
         answerField.text = ""
         answerField.placeholder = "Enter your link here"
+        answerField.returnKeyType = .Send
         searchButton.hidden = true
         submitButton.hidden = false
 

@@ -32,7 +32,7 @@ class ApiClient {
      */
     class func encodeParameters(params: [String: AnyObject]) -> String {
         let components = NSURLComponents()
-        components.queryItems = params.map { (key, value) in(NSURLQueryItem(name: key, value: String(value))) }
+        components.queryItems = params.map { NSURLQueryItem(name: $0, value: String($1)) }
 
         return components.percentEncodedQuery ?? ""
     }

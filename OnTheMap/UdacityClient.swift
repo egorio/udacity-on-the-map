@@ -136,13 +136,13 @@ class UdacityClient: ApiClient {
                 return
             }
 
-            Storage.shared.user = UdacityUser(dictionary: [
+            let user = UdacityUser(dictionary: [
                 "id": id,
                 "firstName": firstName,
                 "lastName": lastName,
             ])
 
-            handler(user: Storage.shared.user, error: nil)
+            handler(user: user, error: nil)
         }
     }
 }

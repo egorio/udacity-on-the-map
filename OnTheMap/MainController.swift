@@ -13,7 +13,7 @@ class MainController: UITabBarController {
 
     var user: UdacityUser?
     var student: ParseStudent?
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,6 +44,9 @@ class MainController: UITabBarController {
                     self.showErrorAlert(error!)
                     return
                 }
+
+                // Update students in the local storage
+                Storage.shared.student = student
 
                 if student == nil {
                     self.presentViewControllerWithIdentifier("PinController")
@@ -82,7 +85,8 @@ class MainController: UITabBarController {
                 }
 
                 // Update students in the local storage
-            
+                Storage.shared.students = students!
+
                 // Refresh markers on map and cells in table
                 (self.viewControllers![0] as! MapController).refresh()
                 (self.viewControllers![1] as! ListController).refresh()

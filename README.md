@@ -9,11 +9,15 @@ by other students. These links can point to any URL that a student shares. After
 students, a user can post their own location and link. The locations are specified with a string and forward geocoded. 
 They can be as specific as a full street address or as generic as “Costa Rica” or “Seattle, WA.”
 
-![LoginController](https://raw.githubusercontent.com/egorio/udacity-on-the-map/master/Screenshots/login-controller.png)
-![MapController](https://raw.githubusercontent.com/egorio/udacity-on-the-map/master/Screenshots/map-controller.png)
-![ListController](https://raw.githubusercontent.com/egorio/udacity-on-the-map/master/Screenshots/list-controller.png)
-![PinController. Location](https://raw.githubusercontent.com/egorio/udacity-on-the-map/master/Screenshots/pin-location-controller.png)
-![PinController. Link](https://raw.githubusercontent.com/egorio/udacity-on-the-map/master/Screenshots/pin-link-controller.png)
+![LoginController](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/login-controller.png)
+![MapController. Loading](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/map-controller-loading.png)
+![MapController](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/map-controller.png)
+![MapController. Share](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/main-controller-pin.png)
+![PinController. Location](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/pin-controller-location.png)
+![PinController. Link](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/pin-controller-link.png)
+![MapController. Annotation](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/map-controller-annotation.png)
+![ListController](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/list-controller.png)
+![MainController. Logout](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/main-controller-logout.png)
 
 ## Implementation
 

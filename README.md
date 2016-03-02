@@ -10,7 +10,6 @@ students, a user can post their own location and link. The locations are specifi
 They can be as specific as a full street address or as generic as “Costa Rica” or “Seattle, WA.”
 
 ![LoginController](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/login-controller.png)
-![MapController. Loading](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/map-controller-loading.png)
 ![MapController](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/map-controller.png)
 ![MapController. Share](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/main-controller-pin.png)
 ![PinController. Location](https://github.com/egorio/udacity-on-the-map/blob/master/Screenshots/pin-controller-location.png)

@@ -38,7 +38,7 @@ The app has four view controller scenes:
 - **ListController** - displays the most recent 100 locations posted by students in a table. Each row displays the name from the student’s Udacity profile. Tapping on the row launches Safari and opens the link associated with the student.
 
 - **PinController** - allows users to input data in two steps: first adding their location string, then their link.
-- 
+  
   When the user clicks on the “Find on the Map” button, the app will forward geocode the string. If the forward geocode fails, the app will display an alert view notifying the user.
 
 ## Requirements
